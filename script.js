@@ -55,6 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         setTimeout(() => {
             loveMessage.style.opacity = '1'; // Show love message
+            forgiveButton.style.display = 'none'; // Hide Forgive button
+            notForgiveButton.style.display = 'none'; // Hide Not Forgive button
         }, 100);
 
         setTimeout(() => {
