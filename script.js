@@ -3,6 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const forgiveButton = document.getElementById('forgive');
     const noMessage = document.createElement('div');
 
+    // Create tulip element
+    const tulip = document.createElement('div');
+    tulip.className = 'tulip';
+    const tulipImg = document.createElement('img');
+    tulipImg.src = 'https://www.example.com/path-to-your-tulip-image'; // Replace with your tulip image URL
+    tulip.appendChild(tulipImg);
+    document.body.appendChild(tulip);
+
     // Style for the NO message
     noMessage.style.position = 'absolute';
     noMessage.style.fontSize = '3rem';
@@ -18,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     forgiveButton.addEventListener('click', function() {
-        alert("Thank you for forgiving!");
+        showTulip();
     });
 
     function moveButton() {
@@ -37,5 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             noMessage.style.opacity = '0'; // Hide NO message after a short delay
         }, 1000);
+    }
+
+    function showTulip() {
+        tulip.style.opacity = '1'; // Show the tulip animation
     }
 });
