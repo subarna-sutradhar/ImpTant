@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     forgiveButton.addEventListener('click', function() {
-        alert("Thank you for forgiving!");
+        showLoveMessage();
     });
 
     function moveButton() {
@@ -37,5 +37,31 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             noMessage.style.opacity = '0'; // Hide NO message after a short delay
         }, 1000);
+    }
+
+    function showLoveMessage() {
+        const loveMessage = document.createElement('div');
+        loveMessage.innerHTML = '&#x1F337; <br> I Love You';
+        loveMessage.style.position = 'absolute';
+        loveMessage.style.fontSize = '3rem';
+        loveMessage.style.color = '#ff1493'; // Deeper pink color
+        loveMessage.style.fontWeight = 'bold';
+        loveMessage.style.left = `${window.innerWidth / 2}px`;
+        loveMessage.style.top = `${window.innerHeight / 2}px`;
+        loveMessage.style.textAlign = 'center';
+        loveMessage.style.transition = 'opacity 0.5s';
+        loveMessage.style.opacity = '0'; // Initially hidden
+        document.body.appendChild(loveMessage);
+
+        setTimeout(() => {
+            loveMessage.style.opacity = '1'; // Show love message
+        }, 100);
+
+        setTimeout(() => {
+            loveMessage.style.opacity = '0'; // Hide love message after a few seconds
+            setTimeout(() => {
+                loveMessage.remove(); // Remove the element from DOM
+            }, 500);
+        }, 3000);
     }
 });
