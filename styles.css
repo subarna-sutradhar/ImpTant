@@ -6,7 +6,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, black, darkteal); /* Gradient from black to dark teal */
+    background: linear-gradient(135deg, #EEE0CA, #D8C3A5); /* Gradient from light beige to light brown */
     font-family: 'Cursive', sans-serif;
 }
 
@@ -16,7 +16,7 @@ body, html {
 
 .animated-text {
     font-size: 5rem;
-    color: #EEE0CA; /* Light beige color */
+    color: #444; /* Dark gray color */
     animation: pulse 2s infinite;
 }
 
@@ -40,14 +40,15 @@ body, html {
     font-size: 2rem;
     padding: 10px 20px;
     margin: 10px;
-    color: #A69C8D; /* Light beige color */
-    background-color: #ff69b4; /* Hot pink color */
+    color: #444; /* Dark gray color */
+    background-color: #E0D5C2; /* Light brown */
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .action-button:hover {
-    background-color: #2F2C28; /* Deeper pink color */
+    background-color: #CDBBAA; /* Darker brown */
+    color: white; /* White text on hover */
 }
