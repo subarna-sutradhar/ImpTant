@@ -16,7 +16,7 @@ body, html {
 
 .animated-text {
     font-size: 5rem;
-    color: #ff69b4; /* Hot pink color */
+    color: #EEE0CA; /* Light beige color */
     animation: pulse 2s infinite;
 }
 
@@ -40,7 +40,7 @@ body, html {
     font-size: 2rem;
     padding: 10px 20px;
     margin: 10px;
-    color: white;
+    color: #EEE0CA; /* Light beige color */
     background-color: #ff69b4; /* Hot pink color */
     border: none;
     border-radius: 10px;
