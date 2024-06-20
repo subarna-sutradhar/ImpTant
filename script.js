@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Style for the NO message
     noMessage.style.position = 'absolute';
     noMessage.style.fontSize = '3rem';
-    noMessage.style.color = '#ff69b4';
+    noMessage.style.color = '#444'; /* Dark gray color */
     noMessage.style.fontWeight = 'bold';
     noMessage.style.transition = 'opacity 0.5s';
     noMessage.style.opacity = '0'; // Initially hidden
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loveMessage.innerHTML = '&#x1F337; <br> I Love You';
         loveMessage.style.position = 'absolute';
         loveMessage.style.fontSize = '3rem';
-        loveMessage.style.color = '#ff1493'; // Deeper pink color
+        loveMessage.style.color = '#D2691E'; /* Chocolate brown color */
         loveMessage.style.fontWeight = 'bold';
         loveMessage.style.left = `${window.innerWidth / 2}px`;
         loveMessage.style.top = `${window.innerHeight / 2}px`;
