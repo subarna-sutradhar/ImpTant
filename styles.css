@@ -40,7 +40,7 @@ body, html {
     font-size: 2rem;
     padding: 10px 20px;
     margin: 10px;
-    color: #EEE0CA; /* Light beige color */
+    color: #A69C8D; /* Light beige color */
     background-color: #ff69b4; /* Hot pink color */
     border: none;
     border-radius: 10px;
@@ -49,5 +49,5 @@ body, html {
 }
 
 .action-button:hover {
-    background-color: #ff1493; /* Deeper pink color */
+    background-color: #2F2C28; /* Deeper pink color */
 }
